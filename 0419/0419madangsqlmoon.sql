@@ -68,7 +68,7 @@ where orderdate not between '20140704' and '2014-07-07';
 # 성이 김씨인 고객의 이름과 주소 출력
 select name, address
 from customer
-where name like "김%";
+where name like '김%';
 
 # 성이 김씨이고 이름이 아로 끝나는 고객의 이름과 주소 출력
 select name, address

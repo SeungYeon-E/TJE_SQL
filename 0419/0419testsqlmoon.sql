@@ -62,10 +62,12 @@ select datediff('2021-01-01', now()); #디데이
 select abs(-2); # 절대값
 select ceil(7.63); # 무조건 올림
 select floor(7.63); # 무조건 내림
-select round(7.43); # 기본값 반올림
+select round(7.43); # 기본값, 반올림
 select mod(29,3); # 나머지값
 select power(2,3); # 제곱승
 select truncate(7.536432, 2); # 소수점까지
+select id, name, truncate(avg(daily_typing_pages), 2) from employee_tbl group by name;
+
 select char_length('text'); # 글자값
 select insert('abcdefg', 3, 4, '123'); # 글자추가
 select trim('     123    '); #공백지우기
